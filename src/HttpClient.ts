@@ -39,7 +39,7 @@ export default class HttpClient {
         }
     }
 
-    async put(path: string = '', body: any = {}) {
+    async put(path: string = '', body?: any) {
         const controller = new AbortController()
         setTimeout(() => controller.abort(), c.TIMEOUT)
 
@@ -62,7 +62,7 @@ export default class HttpClient {
         }
     }
 
-    async post(path: string = '', body: any = {}) {
+    async post(path: string = '', body?: any) {
         const controller = new AbortController()
         setTimeout(() => controller.abort(), c.TIMEOUT)
 
